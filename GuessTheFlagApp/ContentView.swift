@@ -35,7 +35,7 @@ struct ContentView: View {
                     .font(.largeTitle.bold())
                     .foregroundStyle(.secondary)
                 Text(countries[correctAnswer])
-                    .font(.largeTitle.weight(.semibold))
+                    .blueTitle()
                 VStack(spacing: 15) {
                     ForEach(0..<3) { number in
                         Button {

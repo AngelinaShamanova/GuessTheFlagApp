@@ -12,6 +12,8 @@
 		9D72BDE12926BBAD00D564B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D72BDE02926BBAD00D564B3 /* Assets.xcassets */; };
 		9D72BDE42926BBAD00D564B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D72BDE32926BBAD00D564B3 /* Preview Assets.xcassets */; };
 		9DF3F1F4292AB75B00EF89A8 /* FlagImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3F1F3292AB75B00EF89A8 /* FlagImage.swift */; };
+		9DF3F1F7292ABB1A00EF89A8 /* BlueTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3F1F6292ABB1A00EF89A8 /* BlueTitleModifier.swift */; };
+		9DF3F1FA292ABB5200EF89A8 /* View+CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF3F1F9292ABB5200EF89A8 /* View+CustomModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		9D72BDE02926BBAD00D564B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D72BDE32926BBAD00D564B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DF3F1F3292AB75B00EF89A8 /* FlagImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagImage.swift; sourceTree = "<group>"; };
+		9DF3F1F6292ABB1A00EF89A8 /* BlueTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTitleModifier.swift; sourceTree = "<group>"; };
+		9DF3F1F9292ABB5200EF89A8 /* View+CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CustomModifiers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				9D72BDDC2926BBAC00D564B3 /* GuessTheFlagAppApp.swift */,
 				9D72BDDE2926BBAC00D564B3 /* ContentView.swift */,
 				9DF3F1F3292AB75B00EF89A8 /* FlagImage.swift */,
+				9DF3F1F5292ABAFB00EF89A8 /* Custom Modifiers */,
+				9DF3F1F8292ABB2A00EF89A8 /* View extensions */,
 				9D72BDE02926BBAD00D564B3 /* Assets.xcassets */,
 				9D72BDE22926BBAD00D564B3 /* Preview Content */,
 			);
@@ -68,6 +74,22 @@
 				9D72BDE32926BBAD00D564B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DF3F1F5292ABAFB00EF89A8 /* Custom Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				9DF3F1F6292ABB1A00EF89A8 /* BlueTitleModifier.swift */,
+			);
+			path = "Custom Modifiers";
+			sourceTree = "<group>";
+		};
+		9DF3F1F8292ABB2A00EF89A8 /* View extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DF3F1F9292ABB5200EF89A8 /* View+CustomModifiers.swift */,
+			);
+			path = "View extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +165,8 @@
 				9D72BDDF2926BBAC00D564B3 /* ContentView.swift in Sources */,
 				9DF3F1F4292AB75B00EF89A8 /* FlagImage.swift in Sources */,
 				9D72BDDD2926BBAC00D564B3 /* GuessTheFlagAppApp.swift in Sources */,
+				9DF3F1FA292ABB5200EF89A8 /* View+CustomModifiers.swift in Sources */,
+				9DF3F1F7292ABB1A00EF89A8 /* BlueTitleModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
