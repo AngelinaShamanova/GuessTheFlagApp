@@ -22,6 +22,9 @@ struct ContentView: View {
     
     @State private var showingAlert = false
     
+    @State private var animationAmount = 0.0
+    @State private var flagWasTapped = false
+    
     var body: some View {
         ZStack {
             RadialGradient(stops: [
@@ -39,10 +42,18 @@ struct ContentView: View {
                 VStack(spacing: 15) {
                     ForEach(0..<3) { number in
                         Button {
+                            flagWasTapped = true
                             flagTapped(number)
+                            if number == correctAnswer {
+                                withAnimation(.spring(dampingFraction: 0.5, blendDuration: 10)) {
+                                    animationAmount = 360
+                                }
+                            }
                         } label: {
                             FlagImage(name: countries[number])
                         }
+                        .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: number == correctAnswer ? 1 : 0, z: 0))
+                        .opacity(flagWasTapped ? (number == correctAnswer ? 1.0 : 0.25) : 1.0)
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -85,11 +96,15 @@ struct ContentView: View {
     }
     
     func askQuestion() {
+        flagWasTapped = false
+        animationAmount = 0
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
     
     func reset() {
+        flagWasTapped = false
+        animationAmount = 0
         askQuestion()
         numberOfSteps = 0
     }
